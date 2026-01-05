@@ -41,7 +41,7 @@ const HeroSection = () => {
           text-white
         "
       >
-        {/* 👇 Tumhara existing content SAME */}
+        
         <div className="max-w-2xl">
           <span className="inline-block mb-3 bg-red-600 px-3 py-1 text-xs rounded">
             BookMySeat

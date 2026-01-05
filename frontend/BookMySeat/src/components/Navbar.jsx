@@ -41,7 +41,7 @@ const Navbar = () => {
           <Link to="/movies" className="nav-link">Movies</Link>
           <Link to="/theaters" className="nav-link">Theaters</Link>
           <Link to="/releases" className="nav-link">Releases</Link>
-          <Link to="/favorites" className="nav-link">Favorites</Link>
+          {/* <Link to="/favorites" className="nav-link">Favorites</Link> */}
         </nav>
 
         {/* Right Side */}
