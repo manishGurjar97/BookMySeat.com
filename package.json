@@ -1,0 +1,26 @@
+{
+  "name": "bookmyseat.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "client":  "npm run dev --prefix frontend/BookMySeat",
+    "server": "npm start --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishGurjar97/BookMySeat.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manishGurjar97/BookMySeat.com/issues"
+  },
+  "homepage": "https://github.com/manishGurjar97/BookMySeat.com#readme",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

@@ -15,17 +15,25 @@ import Dashboard from './pages/admin/Dashboard'
 import Addshows from './pages/admin/Addshows'
 import Listshows from './pages/admin/Listshows'
 import Listbooking from './pages/admin/Listbooking'
+import SaveUser from './components/auth/SaveUser'
+
+
 
 export default function App() {
+  
   let location =useLocation().pathname.startsWith('/admin');
 
   return (
     
     <>
     <Toaster/>
+    <SaveUser/>
+
     {!location && <Navbar/>}
      <Routes>
+      
       <Route path="/" element={<Home/>} />
+      {/* <Route path="/test" element={<SaveUser/>}/> */}
        <Route path="/movies" element={<Movies/>} />
         <Route path="/Movies/:id" element={<MovieDetails/>} />
         <Route path="/Movies/:id/:Date" element={<Seatlayout/>} />
