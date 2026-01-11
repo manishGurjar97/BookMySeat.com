@@ -1,11 +1,14 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
+import dotenv from "dotenv";
 
-export default async function mongoconnection(){
-    try{
-        await mongoose.connect(process.env.MONGO_URL);
-        console.log("db connect successfuly");
-    }catch(err){
-        console.log(err.message);
-    }
-    
-};
+dotenv.config();
+async function mongoconnection(){
+mongoose
+  .connect(process.env.MONGO_URL)
+  .then(() => console.log("MongoDB connected"))
+  .catch(err => console.log(err));
+
+}
+
+export default mongoconnection;
+
