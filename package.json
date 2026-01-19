@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-   "client":  "npm run dev --prefix frontend/BookMySeat",
+    "client": "npm run dev --prefix frontend/BookMySeat",
     "server": "npm start --prefix server",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/manishGurjar97/BookMySeat.com#readme",
   "description": "",
   "dependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "inngest": "^3.49.3"
   }
 }
