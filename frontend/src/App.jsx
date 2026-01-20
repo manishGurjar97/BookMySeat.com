@@ -1,5 +1,5 @@
 import{Routes,Route} from 'react-router-dom'
-import Home from './pages/home'
+import Home from './pages/Home'
 import Movies from './pages/Movies'
 import  MovieDetails from './pages/MovieDetails'
 import Favorite from './pages/Favorite'
@@ -15,7 +15,7 @@ import Dashboard from './pages/admin/Dashboard'
 import Addshows from './pages/admin/Addshows'
 import Listshows from './pages/admin/Listshows'
 import Listbooking from './pages/admin/Listbooking'
-import SaveUser from './components/auth/SaveUser'
+
 
 
 
@@ -27,7 +27,7 @@ export default function App() {
     
     <>
     <Toaster/>
-    <SaveUser/>
+   
 
     {!location && <Navbar/>}
      <Routes>
